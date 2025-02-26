@@ -10,7 +10,7 @@ const healthParagraph = document.getElementById("healthParagraph");
 const xpParagraph = document.getElementById("xpParagraph")
 //const resultParagraph = document.getElementById("resultParagraph");
 const spiderAudio = new Audio("spidersound.mp3");
-
+const appleAudio - new Audio("applecrunch.mp3");
 
 
 const tileSize = 64; 
@@ -440,6 +440,10 @@ function gainHealth() {
     if (health > 100) {
         health = 100;
     }
+
+    appleAudio.play();
+
+
     healthParagraph.innerHTML = "Health: " + health;
     healthBar.value = health;
 }
