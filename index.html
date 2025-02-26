@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Ant Game</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    
+<p id="gamepadOutput">GAMEPAD</p>
+<p id="keyOut">KEYBOARD</p>
+
+
+<div id="mainWrapper">
+    <div id="stats">
+        <!-- <p id="scoreParagraph">Score: 0</p> -->
+        <p id="healthParagraph">Health: 100</p>
+        <p id="xpParagraph">XP: 0</p>
+    </div>
+    
+    <div id="progressBars">
+        <progress id="healthBar" class="health" value="100" max="100"> </progress>
+        <progress id="xpBar" value="0" max="100"> </progress>
+    </div>
+    
+    <p id="resultParagraph" hidden>Hello</p>
+    <div id="world"></div>
+    
+    
+    <img id="player" src="ant.png">
+
+</div>
+
+    
+<script src="script.js"></script> 
+</body>

@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#mainWrapper {
+    
+    border-style: solid;
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+    /*background-color: #45dcfe;*/
+    background-color: darkgray;
+
+    position: absolute; 
+    /*
+    left: 0; 
+    right: 0; 
+    top: 0;*/
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    
+    overflow: hidden;
+    margin: auto;
+    bottom: 0;
+    z-index: 0;
+    
+}
+
+#stats {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#progressBars {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#world {
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+
+}
+
+.tile {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    filter: brightness(50%);
+    /*z-index: 1;*/
+}
+
+.tile.explored {
+    filter: brightness(100%);
+}
+
+.monster {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+/* .hostile {
+    background-color: red !important;
+    opacity: 0.6;
+} */
+
+
+
+ 
+/* #dirt {
+    position: relative;
+    
+    width: 500px;
+    height: 500px;
+    
+    bottom: 0;
+    margin: 0;
+    
+    
+    background-image: url('dirt2.png');
+    background-repeat: repeat-x;
+    z-index: 1;
+} */
+
+#player {
+    position: absolute;
+    
+    width: 40px;
+    height: 40px;
+    left: 230px;
+    top: 230px;
+    z-index: 3;
+    
+}
+
+
+
+#healthParagraph {
+    
+    height: 20px;
+    width: 100px;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    position: relative;
+    color: white;
+    
+    overflow: hidden;
+    /*margin: auto;*/
+    bottom: 0;
+    z-index: 2;
+}
+
+#xpParagraph {
+    
+    height: 20px;
+    width: 100px;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    position: relative;
+    color: white;
+    
+    overflow: hidden;
+    /*margin: auto;*/
+    bottom: 0;
+    z-index: 2;
+    
+    
+}
+
+
+
+#healthBar {
+
+    border-style: solid;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: left;*/
+    position: relative;
+    accent-color: red;
+    
+    overflow: hidden;
+    /*margin: auto;*/
+    bottom: 0;
+    z-index: 2;
+    
+}
+
+#xpBar {
+    border-style: solid;
+    border-radius: 5px;
+    height: 20px;
+    width: 100px;
+
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: left;*/
+    position: relative;
+
+    overflow: hidden;
+    /*margin: auto;*/
+    bottom: 0;
+    z-index: 2;
+    
+    
+}
+
+
+
+
+progress {
+    color: darkgrey;
+
+    /*Firefox: Unfilled portion of the progress bar*/
+    background: lightgrey;
+}
+
+ /*Firefox: Filled portion of the progress bar*/
+#healthBar::-moz-progress-bar {
+    background: red;
+}
+
+ /*Chrome & Safari: Unfilled portion of the progress bar*/
+#healthBar::-webkit-progress-bar {
+    background: lightgrey;
+}
+
+ /*Chrome & Safari: Filled portion of the progress bar*/
+#healthBar::-webkit-progress-value {
+    background: red;
+}
+
+ /*Firefox: Filled portion of the progress bar*/
+#xpBar::-moz-progress-bar {
+    background: blue;
+}
+
+ /*Chrome & Safari: Unfilled portion of the progress bar*/
+#xpBar::-webkit-progress-bar {
+    background: lightgrey;
+}
+
+ /*Chrome & Safari: Filled portion of the progress bar*/
+#xpBar::-webkit-progress-value {
+    background: blue;
+}
+
+
+
+
+
+
+/*.health {*/
+/*    accent-color: red;*/
+/*}*/
+
+/*#resultParagraph {*/
+/*    z-index: 11;*/
+/*    color: black;*/
+/*}*/
+
+
+
+.endingParagraph {
+    position: absolute;
+    z-index: 10;
+    color: black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    text-align: center;
+    opacity: 1;
+    
+}
+
+
+
+
+
+
+
+  
