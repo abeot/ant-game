@@ -1,4 +1,3 @@
-
 const gamepadOutput = document.getElementById("gamepadOutput");
 const player = document.getElementById("player");
 const keyOut = document.getElementById("keyOut");
@@ -442,7 +441,6 @@ function gainHealth() {
     }
 
     appleAudio.play();
-
 
     healthParagraph.innerHTML = "Health: " + health;
     healthBar.value = health;
